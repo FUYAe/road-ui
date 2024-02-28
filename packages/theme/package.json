@@ -1,15 +1,12 @@
 {
-  "name": "@road-ui/components",
+  "name": "@road-ui/theme",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "main": "index.less",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@road-ui/theme": "workspace:^"
-  }
+  "license": "ISC"
 }

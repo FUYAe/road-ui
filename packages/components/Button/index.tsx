@@ -7,14 +7,14 @@ export interface ButtonProps extends Omit<ComponentProps<"button">, "type"> {
   type?: ButtonType;
 }
 export default function Button(props: ButtonProps) {
-  props = mergeProps({ type: "default" }, props);
+  props = mergeProps({ type: "default" as ButtonType }, props);
   const [local, rest] = splitProps(props, ["children", "type"]);
 
   return (
     <button
       type="button"
       classList={{
-        [`road-ui-button-${props.type}`]: true,
+        [`road-ui-button-${local.type}`]: true,
         "road-ui-button": true,
       }}
       {...rest}

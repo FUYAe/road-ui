@@ -7,6 +7,9 @@ importers:
       '@road-ui/components':
         specifier: workspace:^
         version: link:packages/components
+      '@road-ui/theme':
+        specifier: workspace:^
+        version: link:packages/theme
       '@types/node':
         specifier: ^20.11.21
         version: 20.11.21
@@ -32,9 +35,15 @@ importers:
         specifier: ^2.10.1
         version: 2.10.1(solid-js@1.8.15)(vite@5.1.4)
 
-  packages/components: {}
+  packages/components:
+    dependencies:
+      '@road-ui/theme':
+        specifier: workspace:^
+        version: link:../theme
 
   packages/helper: {}
+
+  packages/theme: {}
 
 packages:
 
