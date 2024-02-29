@@ -1,4 +1,4 @@
-import { Button } from "@road-ui/components";
+import ButtonWrapper from "./components/Button";
 import { createSignal } from "solid-js";
 import "@road-ui/style/index.less";
 export default function App() {
@@ -8,9 +8,7 @@ export default function App() {
   }, 3000);
   return (
     <div>
-      <Button type="danger" disabled>
-        1212
-      </Button>
+      <ButtonWrapper/>
     </div>
   );
 }

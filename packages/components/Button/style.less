@@ -2,16 +2,39 @@
   border: none;
   border-radius: 4px;
   padding: 6px 12px;
+
   &-default {
-    background-color: var(--road-ui-color-red0);
+    background: var(--RUI-BG-default);
   }
+
   &-primary {
-    background-color: var(--road-ui-color-red0);
+    background: var(--RUI-BG-primary);
   }
 
   &-danger {
     background: var(--RUI-BG-danger);
   }
+
+  &-info {
+    background: var(--RUI-BG-info);
+  }
+
+  &-warning {
+    background: var(--RUI-BG-warning);
+  }
+
+  &-success {
+    background: var(--RUI-BG-success);
+  }
+
   &:disabled {
+    color: #999;
+  }
+
+  &:hover {
+    opacity: 0.9;
+  }
+  &:active {
+    opacity: 0.7;
   }
 }
