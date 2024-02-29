@@ -1,32 +1,53 @@
 .road-ui-button {
   border: none;
-  border-radius: 4px;
-  padding: 6px 12px;
+  border-radius: var(--rui-radius);
+  color: var(--rui-f-c-diff);
 
   &-default {
-    background: var(--RUI-BG-default);
+    background: var(--rui-bg-default);
+    color: var(--rui-f-c);
   }
 
   &-primary {
-    background: var(--RUI-BG-primary);
+    background: var(--rui-bg-primary);
   }
 
   &-danger {
-    background: var(--RUI-BG-danger);
+    background: var(--rui-bg-danger);
   }
 
   &-info {
-    background: var(--RUI-BG-info);
+    background: var(--rui-bg-info);
   }
 
   &-warning {
-    background: var(--RUI-BG-warning);
+    background: var(--rui-bg-warning);
+    color: var(--rui-f-c);
   }
 
   &-success {
-    background: var(--RUI-BG-success);
+    background: var(--rui-bg-success);
   }
-
+  &-medium {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+  &-small {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+  &-large {
+    padding: 10px 16px;
+  }
+  &-xlarge {
+    padding: 12px 18px;
+    font-size: 20px;
+  }
+  &-circle {
+    width: max-content;
+    aspect-ratio: 1/1;
+    border-radius: 1000px;
+  }
   &:disabled {
     color: #999;
   }
