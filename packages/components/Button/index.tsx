@@ -1,5 +1,6 @@
 import { mergeProps, splitProps } from "solid-js";
 import type { ComponentProps, JSX } from "solid-js";
+import useClassList from "../utils/useClassList";
 import "./style.less";
 export type ButtonType =
   | "default"
@@ -15,14 +16,11 @@ export interface ButtonProps extends Omit<ComponentProps<"button">, "type"> {
 export default function Button(props: ButtonProps) {
   props = mergeProps({ type: "default" as ButtonType }, props);
   const [local, rest] = splitProps(props, ["children", "type"]);
-
+  const classlist =()=>useClassList(props, "button",local.type)
   return (
     <button
       type="button"
-      classList={{
-        [`road-ui-button-${local.type}`]: true,
-        "road-ui-button": true,
-      }}
+      classList={classlist()}
       {...rest}
     >
       {local.children}
