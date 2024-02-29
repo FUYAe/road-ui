@@ -1,6 +1,6 @@
 import { Button } from "@road-ui/components";
 import { createSignal } from "solid-js";
-import "@road-ui/theme/index.less";
+import "@road-ui/style/index.less";
 export default function App() {
   const [get, set] = createSignal("");
   setTimeout(() => {
@@ -8,7 +8,7 @@ export default function App() {
   }, 3000);
   return (
     <div>
-      <Button type="primary" disabled>
+      <Button type="danger" disabled>
         1212
       </Button>
     </div>

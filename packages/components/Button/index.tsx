@@ -1,7 +1,13 @@
 import { mergeProps, splitProps } from "solid-js";
 import type { ComponentProps, JSX } from "solid-js";
 import "./style.less";
-export type ButtonType = "default" | "primary";
+export type ButtonType =
+  | "default"
+  | "primary"
+  | "danger"
+  | "success"
+  | "warning"
+  | "info";
 export interface ButtonProps extends Omit<ComponentProps<"button">, "type"> {
   children?: any;
   type?: ButtonType;

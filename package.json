@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@road-ui/components": "workspace:^",
-    "@road-ui/theme": "workspace:^",
+    "@road-ui/style": "workspace:^",
     "@types/node": "^20.11.21",
     "babel-preset-solid": "^1.8.15",
     "eslint": "^8.57.0",
