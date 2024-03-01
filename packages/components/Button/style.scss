@@ -1,0 +1,263 @@
+.rui-button {
+  border: none;
+  border-radius: var(--rui-radius);
+  color: var(--rui-f-c-diff);
+
+  &.rui {
+    &-default {
+      background: var(--rui-color-default);
+      color: var(--rui-f-c);
+      &:disabled {
+        background: var(--rui-color-default-disabled);
+      }
+    
+      &:hover {
+        background: var(--rui-color-default-hover);
+      }
+    
+      &:active {
+        background: var(--rui-color-default-active);
+      }
+    }
+
+    &-primary {
+      background: var(--rui-color-primary);
+      &:disabled {
+        background: var(--rui-color-primary-disabled);
+      }
+    
+      &:hover {
+        background: var(--rui-color-primary-hover);
+      }
+    
+      &:active {
+        background:var(--rui-color-primary-active);
+      }
+    }
+
+    &-danger {
+      background: var(--rui-color-danger);
+      &:disabled {
+        background: var(--rui-color-danger-disabled);
+      }
+    
+      &:hover {
+        background: var(--rui-color-danger-hover);
+      }
+    
+      &:active {
+        background: var(--rui-color-danger-active);
+      }
+    }
+
+    &-info {
+      background: var(--rui-color-info);
+      &:disabled {
+        background: var(--rui-color-info-disabled);
+      }
+    
+      &:hover {
+        background: var(--rui-color-info-hover);
+      }
+    
+      &:active {
+        background: var(--rui-color-info-active);
+      }
+
+    }
+
+    &-warning {
+      background: var(--rui-color-warning);
+      color: var(--rui-f-c);
+      &:disabled {
+        background:  var(--rui-color-warning-disabled);
+      }
+    
+      &:hover {
+        background:  var(--rui-color-warning-hover);
+      }
+    
+      &:active {
+        background:  var(--rui-color-warning-active);
+      }
+    }
+
+    &-success {
+      background: var(--rui-color-success);
+      &:disabled {
+        background:  var(--rui-color-success-disabled);
+      }
+    
+      &:hover {
+        background:  var(--rui-color-success-hover);
+      }
+    
+      &:active {
+        background:  var(--rui-color-success-active);
+      }
+
+    }
+    &-plain {
+      &.rui-default {
+        background: var(--rui-color-default-plain);
+        border:1px solid var(--rui-color-default);
+
+        &:disabled {
+          background: var(--rui-color-default-disabled);
+        }
+      
+        &:hover {
+          background: var(--rui-color-default-hover);
+          color: var(--rui-f-c-diff);
+        }
+      
+        &:active {
+          background: var(--rui-color-default-active);
+        }
+      }
+  
+      &.rui-primary {
+        background: var(--rui-color-primary-plain);
+        color:var( --rui-color-primary);
+        border:1px solid var( --rui-color-primary);
+
+
+        &:disabled {
+          background: var(--rui-color-primary-disabled);
+        }
+      
+        &:hover {
+          background: var(--rui-color-primary-hover);
+        color: var(--rui-f-c-diff);
+
+        }
+      
+        &:active {
+          background:var(--rui-color-primary-active);
+        }
+
+      }
+  
+      &.rui-danger {
+        background: var(--rui-color-danger-plain);
+        color:var( --rui-color-danger);
+        border:1px solid var( --rui-color-danger);;
+
+
+        &:disabled {
+          background: var(--rui-color-danger-disabled);
+        }
+      
+        &:hover {
+          background: var(--rui-color-danger-hover);
+        color: var(--rui-f-c-diff);
+
+        }
+      
+        &:active {
+          background: var(--rui-color-danger-active);
+        }
+      }
+  
+      &.rui-info {
+        background: var(--rui-color-info-plain);
+        color:var( --rui-color-info);
+        border:1px solid var( --rui-color-info);;
+
+
+        &:disabled {
+          background: var(--rui-color-info-disabled);
+        }
+      
+        &:hover {
+        color: var(--rui-f-c-diff);
+        background: var(--rui-color-info-hover);
+        }
+      
+        &:active {
+          background: var(--rui-color-info-active);
+        }
+      }
+  
+      &.rui-warning {
+        background: var(--rui-color-warning-plain);
+        color: var( --rui-color-warning);
+        border:1px solid var( --rui-color-warning);
+
+
+        &:disabled {
+          background:  var(--rui-color-warning-disabled);
+        }
+      
+        &:hover {
+        color: var(--rui-f-c-diff);
+        background:  var(--rui-color-warning-hover);
+        }
+      
+        &:active {
+          background:  var(--rui-color-warning-active);
+        }
+      }
+  
+      &.rui-success {
+        background: var(--rui-color-success-plain);
+        color:var( --rui-color-success);
+        border:1px solid var( --rui-color-success);
+        &:disabled {
+          background:  var(--rui-color-success-disabled);
+        }
+      
+        &:hover {
+          background:  var(--rui-color-success-hover);
+          color: var(--rui-f-c-diff);
+
+        }
+        &:active {
+          background:  var(--rui-color-success-active);
+        }
+  
+      }
+    }
+    &-medium {
+      --button-size:var(--rui-size-medium);
+      height: var(--button-size);
+      padding: 8px 12px;
+      font-size: 14px;
+    }
+
+    &-small {
+      --button-size:var(--rui-size-small);
+      height: var(--button-size);
+      padding: 5px 8px;
+      font-size: 12px;
+    }
+
+    &-large {
+      --button-size:var(--rui-size-large);
+      height: var(--button-size);
+      padding: 12px 16px;
+    }
+
+    &-xlarge{
+      --button-size:var(--rui-size-xlarge);
+      height: var(--button-size);
+      padding: 16px 18px;
+      font-size: 20px;
+    }
+
+    &-circle {
+      height: var(--button-size);
+      width: var(--button-size);
+      aspect-ratio: 1/1;
+      border-radius: 1000px;
+      padding: var(--rui-s);
+    }
+    &-sqaure {
+      height: var(--button-size);
+      width: var(--button-size);
+      aspect-ratio: 1/1;
+    }
+  }
+
+
+}

@@ -1,0 +1,54 @@
+@import "/packages/style/color/index.scss";
+:root {
+  --rui-bg: #eee;
+  --rui-color-danger: #{$Red4};
+  --rui-color-danger-plain: #{$Red1};
+  --rui-color-danger-hover: #{$Red3};
+  --rui-color-danger-active: #{$Red5};
+  --rui-color-danger-disabled: #{$Red0};
+  --rui-color-default: #{$Neutral1};
+  --rui-color-default-plain: #{$Neutral1};
+  --rui-color-default-hover: #{$Neutral0};
+  --rui-color-default-active: #{$Neutral3};
+  --rui-color-default-disabled: #{$Neutral0};
+  --rui-color-primary: #{$Blue4};
+  --rui-color-primary-plain: #{$Blue1};
+  --rui-color-primary-hover: #{$Blue3};
+  --rui-color-primary-active: #{$Blue5};
+  --rui-color-primary-disabled: #{$Blue0};
+  --rui-color-warning: #{$Amber4};
+  --rui-color-warning-plain: #{$Amber1};
+  --rui-color-warning-hover: #{$Amber3};
+  --rui-color-warning-active: #{$Amber5};
+  --rui-color-warning-disabled: #{$Amber0};
+  --rui-color-success: #{$Green4};
+  --rui-color-success-plain: #{$Green1};
+  --rui-color-success-hover: #{$Green3};
+  --rui-color-success-active: #{$Green5};
+  --rui-color-success-disabled: #{$Green0};
+  --rui-color-info: #{$Grey4};
+  --rui-color-info-plain: #{$Grey1};
+  --rui-color-info-hover: #{$Grey3};
+  --rui-color-info-active: #{$Grey5};
+  --rui-color-info-disabled: #{$Grey0};
+
+  --rui-f-c: #{$Neutral9};
+  --rui-f-c-diff: #{$PureWhite};
+  --rui-f-c-1: #{$PureBlack};
+  --rui-c-white: #{$PureWhite};
+  --rui-c-black: #{$PureBlack};
+  --rui-radius: 6px;
+
+  --rui-size-large:40px;
+  --rui-size-xlarge:48px;
+  --rui-size-medium:32px;
+  --rui-size-small:24px;
+
+  --rui-size-large-padding:16px;
+  --rui-size-xlarge-padding:12px;
+  --rui-size-medium-padding:8px;
+  --rui-size-small-padding:5px;
+}
+:root {
+  color: var(--RUI-F-C);
+}
