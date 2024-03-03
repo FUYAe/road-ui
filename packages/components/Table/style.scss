@@ -1,0 +1,49 @@
+.rui-table {
+  --text-align: left;
+  --margin-left: 10px;
+  --margin-right: 10px;
+  --tr-bg-even: #f5f5f5;
+  --tr-bg-odd: #fff;
+  --th-color: #909399;
+  --cell-color: #7e8186;
+
+  border-spacing: 0;
+  width: 100%;
+  row-gap: 4px;
+  border-collapse: collapse;
+  thead {
+    height: 40px;
+    tr {
+      background-color: rgb(252, 255, 255);
+    }
+    th {
+      text-align: var(--text-align);
+      color: var(--th-color);
+      padding: 8px 8px;
+    }
+  }
+  td {
+    text-align: var(--text-align);
+    margin-left: var(--margin-left);
+    margin-right: var(--margin-right);
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+  }
+  tr {
+    background-color: antiquewhite;
+  }
+  tbody {
+    tr:nth-child(odd) {
+      background-color: var(--tr-bg-odd);
+    }
+    tr:nth-child(even) {
+      background-color: var(--tr-bg-even);
+    }
+    td {
+      padding: 8px 8px;
+    }
+  }
+}
+.rui-table-text-cell {
+  color: var(--cell-color);
+}
